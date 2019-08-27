@@ -4,6 +4,8 @@ apply plugin: 'war'
 
 // tag::repositories[]
 repositories {
+    mavenLocal()
+
     mavenCentral()
 }
 // end::repositories[]
@@ -18,6 +20,10 @@ war {
 // tag::dependencies[]
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
+
+dependencies {
+    providedCompile 'javax.servlet:servlet-api:2.5'
+}
 // end::dependencies[]
 
 tasks.withType(JavaCompile) {
