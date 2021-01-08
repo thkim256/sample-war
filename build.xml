@@ -10,15 +10,12 @@
         <property environment='env'/>
         <mkdir dir="build/classes"/>
         <mkdir dir="dist" />
-        <property name='servlet.jar' value='${env.CATALINA_HOME}/lib/servlet-api.jar' />
-        <echo message='${servlet.jar}' />
     </target>
 
     <target name="compile" depends="init" >
         <javac destdir="build/classes" debug="true" srcdir="src/main/java">
             <classpath>
                 <path refid="compile.classpath"/>
-                <pathelement path='${servlet.jar}' />
             </classpath>
         </javac>
     </target>
