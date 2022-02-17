@@ -28,7 +28,7 @@ limitations under the License.
 </description>
 <servlet>
     <servlet-name>HelloServlet</servlet-name>
-    <servlet-class>HelloServlet</servlet-class>
+    <servlet-class>hello.HelloServlet</servlet-class>
 </servlet>
 <servlet-mapping>
     <servlet-name>HelloServlet</servlet-name>

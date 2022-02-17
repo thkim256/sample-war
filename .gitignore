@@ -1,5 +1,6 @@
 # gradle ignore
 .gradle
+.idea
 /build/
 gradle-app.setting
 !gradle-wrapper.jar
